@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="pictures/logo/logo-black2.png">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/servesstyle.css">
+        <title>serves</title>
+    </head>
+    <body>
+        <main>
+            <div id="overR"></div>
+            <section class="section1">
+                <header>
+                        <i class="fa-solid fa-ellipsis"></i>
+                    <div class="logo">
+                        <img src="pictures/logo/logo-black2.png" alt="logo-white">
+                        <h2>
+                            <span id="logoLeft">dl</span>
+                            <span id="logoRight">ra</span>
+                        </h2>
+                    </div>
+                    <nav>
+                        <ul>
+                            <li onclick="window.open('index.html', '_self')"><i class="fa-solid fa-house"></i> home</li>
+                            <li onclick="window.open('our-serves.html', '_self')"><i class="fa-solid fa-bars"></i> our serves</li>
+                            <!-- <li onclick="window.open('blog.html', '_block')"><i class="fa-solid fa-blog"></i> blog</li> -->
+                            <li onclick="window.open('about-us.html', '_self')"><i class="fa-solid fa-address-card"></i> about us</li>
+                        </ul>
+                    </nav>
+                    <img src="pictures/sun/whiteSun.png" id="sun">
+                    <button id="btn1" onclick="up()"><i class="fa-solid fa-house"></i></button>
+                </header>
+            </section>
+                <section class="sectionserv2">
+                    <div class="part">
+                        <h2 class="partH">book</h2>
+                        <p class="partP">Books are a source of knowledge, inspiration, and entertainment, offering insights into different cultures, ideas, and experiences.</p>
+                    </div>
+                    <div class="part">
+                        <h2 class="partH">quotes</h2>
+                        <p class="partP">Quotes capture profound thoughts and emotions, often providing wisdom, inspiration, or a different perspective on life.</p>
+                    </div>
+                    <div class="part">
+                        <h2 class="partH">ai tools</h2>
+                        <p class="partP">Artificial intelligence tools enhance productivity and innovation by automating tasks, analyzing data, and providing intelligent solutions across various industries.</p>
+                    </div>
+                  </section>
+                  <section class="sectionbook"> 
+                    <div id="booknav">
+                        <i class="fa-solid fa-backward"></i>
+                        <h3>choose your classification</h3>
+                        <div class="controls">
+                            <a title="Literature and Arts" href="#Literature"><i class="fas fa-book-open"></i></a>
+                            <a title="Science and Knowledge" href="#Science"><i class="fas fa-flask"></i></a>
+                            <a title="History and Geography" href="#History"><i class="fas fa-globe"></i></a>
+                            <a title="Self-Development and Society"  href="#Development"><i class="fas fa-user-graduate"></i></a>
+                            <a title="Technology and Engineering"  href="#Technology"><i class="fas fa-cogs"></i></a>
+                        </div>
+                          <nav>
+                              <h4 id="Literature" class="cat">Literature and Arts</h4>
+                              <ul class="Literature">
+                                <li onclick="book('pdf/Literature/mockingbird.pdf')"><span></span></li>
+                                <li onclick="book('pdf/Literature/Orwell-1984.pdf')"><span></span></li>
+                                <li onclick="book('pdf/Literature/pandp12p.pdf')"><span></span></li>
+                                <li onclick="book('pdf/Literature/the-great-gatsby.pdf')"><span></span></li>
+                                <li onclick="book('pdf/Literature/moby-dick.pdf')"><span></span></li>
+                                <li onclick="book('pdf/Literature/Rye.pdf')"><span></span></li>
+                                <li onclick="book('pdf/Literature/Harry Potter and the Sorcerers Stone.pdf')"><span></span></li>
+                                <li onclick="book('pdf/Literature/The-lord-of-the-rings.pdf')"><span></span></li>
+                                <li onclick="book('pdf/Literature/crime-and-punishment.pdf')"><span></span></li>
+                                <li onclick="book('pdf/Literature/Jane-Eyre.pdf')"><span></span></li>
+                                <li onclick="book('pdf/Literature/Kotobati.pdf')"><span></span></li>
+                                <li onclick="book('pdf/Literature/the road.pdf')"><span></span></li>
+                                <li onclick="book('pdf/Literature/Mkhailef.pdf')"><span></span></li>
+                                <li onclick="book('pdf/Literature/Brave-New-World.pdf')"><span></span></li>
+                                <li onclick="book('pdf/Literature/Never-Let-Me-Go.pdf')"><span></span></li>
+                                <li onclick="book('pdf/Literature/mitchell-david-cloud-atlas.pdf')"><span></span></li>
+                                <li onclick="book('pdf/Literature/the_night.pdf')"><span></span></li>
+                                <li onclick="book('pdf/Literature/dracula.pdf')"><span></span></li>
+                              </ul>
+                              <h4 id="Science" class="cat">Science and Knowledge</h4>
+                              <ul class="Science">
+                                <li onclick="book('pdf/Science/stephen.pdf')"><span></span></li>
+                                <li onclick="book('pdf/Science/Humankind.pdf')"><span></span></li>
+                                <li onclick="book('pdf/Science/The-Selfish.pdf')"><span></span></li>
+                                <li onclick="book('pdf/Science/sagancosmos.pdf')"><span></span></li>
+                                <li onclick="book('pdf/Science/business.pdf')"><span></span></li>
+                                <li onclick="book('pdf/Science/The Emperor of All Maladies.pdf')"><span></span></li>
+                                <li onclick="book('pdf/Science/Origin_of_Species.pdf')"><span></span></li>
+                                <li onclick="book('pdf/Science/Kuhn.pdf')"><span></span></li>
+                                <li onclick="book('pdf/Science/Outliers- The Story of Success.pdf')"><span></span></li>
+                                <li onclick="book('pdf/Science/Fermats Last Theorem.pdf')"><span></span></li>
+                              </ul>
+                              <h4 id="History" class="cat">History and Geography</h4>
+                              <ul class="History">
+                                <li onclick="book('pdf/History/diamond-selections.pdf')"><span></span></li>
+                                <li onclick="book('pdf/History/ancient-world.pdf')"><span></span></li>
+                                <li onclick="book('pdf/History/silk road.pdf')"><span></span></li>
+                                <li onclick="book('pdf/History/History of the Unite - Howard Zinn.pdf')"><span></span></li>
+                                <li onclick="book('pdf/History/rise and fall.pdf')"><span></span></li>
+                                <li onclick="book('pdf/History/The-Origins-of-Political-Order-1.pdf')"><span></span></li>
+                                <li onclick="book('pdf/History/The-Geography-of-Thought-Chapter-3.pdf')"><span></span></li>
+                                <li onclick="book('pdf/History/Prisoners of Geography By Tim Marshall.pdf')"><span></span></li>
+                                <li onclick="book('pdf/History/the-diary-of-a-young-girl.pdf')"><span></span></li>
+                                <li onclick="book('pdf/History/The world is flat.pdf')"><span></span></li>
+                              </ul>
+                              <h4 id="Development" class="cat">Self-Development and Society</h4>
+                              <ul class="Development">
+                                <li onclick="book('pdf/Development/7habits.pdf')"><span></span></li>
+                                <li onclick="book('pdf/Development/how-to-win-friends-and-influence-people.pdf')"><span></span></li>
+                                <li onclick="book('pdf/Development/Atomic habits \( PDFDrive \).pdf')"><span></span></li>
+                                <li onclick="book('pdf/Development/Think-And-Grow-Rich_2011-06.pdf')"><span></span></li>
+                                <li onclick="book('pdf/Development/The Power Of Now - Eckhart Tolle.pdf')"><span></span></li>
+                                <li onclick="book('pdf/Development/toaz.info-pdf-the-subtle-art.pdf')"><span></span></li>
+                                <li onclick="book('pdf/Development/the-four-agreements-by-don-miguel-ruiz.pdf')"><span></span></li>
+                                <li onclick="book('pdf/Development/angela-duckworth-grit.pdf')"><span></span></li>
+                                <li onclick="book('pdf/Development/simon-sinek-start-with-why.pdf')"><span></span></li>
+                                <li onclick="book('pdf/Development/Brene-brown-book1.pdf')"><span></span></li>
+                              </ul>
+                              <h4 id="Technology" class="cat">Technology and Engineering</h4>
+                              <ul class="Technology">
+                                <li onclick="book('pdf/Technology/elon-musk-teslafantastic-future.pdf')"><span></span></li>
+                                <li onclick="book('pdf/Technology/Levy_S-Hackers-Heroes-Computer-Revolution.pdf')"><span></span></li>
+                                <li onclick="book('pdf/Technology/Clean Code .pdf')"><span></span></li>
+                                <li onclick="book('pdf/Technology/Erick Ries.pdf')"><span></span></li>
+                                <li onclick="book('pdf/Technology/structures_or_why.pdf')"><span></span></li>
+                                <li onclick="book('pdf/Technology/Introduction.pdf')"><span></span></li>
+                                <li onclick="book('pdf/Technology/code-charles-petzold.pdf')"><span></span></li>
+                                <li onclick="book('pdf/Technology/Artificial_Intelligence.pdf')"><span></span></li>
+                                <li onclick="book('pdf/Technology/Thomas-C.-Hayes-Paul-Horowitz.pdf')"><span></span></li>
+                                <li onclick="book('pdf/Technology/Brynjolfsson  .pdf')"><span></span></li>
+                              </ul>
+                          </nav>
+                    </div>
+                    <div class="target">
+                        <i class="fa-solid fa-arrow-left-long" onclick=" backTB()"></i>
+                        <iframe frameborder="0"></iframe>
+                    </div>
+                </section>
+                <section class="sectionquotes">
+                  <div class="search">
+                      <input id="input" type="text" placeholder="search for quotes">
+                      <!-- <button>search </button> -->
+                      <select id="type">
+                          <option value="quotes">by quotes</option>
+                          <option value="book">by book</option>
+                          <option value="Author">by speaker</option>
+                      </select>
+                  </div>
+                  <i class="fa-solid fa-backward"></i>
+                  <div class="result">
+                      <div>
+                          <p>"It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife."</p>
+                          <h4>Book Name: Pride and Prejudice</h4>
+                          <span>Speaker: Jane Austen</span>
+                        </div>
+                        <div>
+                            <p>"Vanity and pride are different things, though the words are often used synonymously."</p>
+                            <h4>Book Name: Pride and Prejudice</h4>
+                            <span>Speaker: Jane Austen</span>
+                        </div>
+                        <div>
+                            <p>"There is, I believe, in every disposition a tendency to some particular evil, a natural defect, which not even the best education can overcome."</p>
+                            <h4>Book Name: Pride and Prejudice</h4>
+                            <span>Speaker: Jane Austen</span>
+                        </div>
+                        <div>
+                            <p>"A lady’s imagination is very rapid; it jumps from admiration to love, from love to matrimony in a moment."</p>
+                            <h4>Book Name: Pride and Prejudice</h4>
+                            <span>Speaker: Jane Austen</span>
+                        </div>
+                        <div>
+                            <p>"The world is a jungle, where only the strongest survive. Weakness is nothing but a death sentence."</p>
+                            <h4>Book Name: Reverend Insanity</h4>
+                            <span>Speaker: Fang Yuan</span>
+                        </div>
+                        <div>
+                            <p>"No matter how powerful one becomes, they are still but a speck in the grand scheme of the world."</p>
+                            <h4>Book Name: Reverend Insanity</h4>
+                            <span>Speaker: Fang Yuan</span>
+                        </div>
+                        <div>
+                            <p>"Survival is the only law that matters. Power is only a means to that end."</p>
+                            <h4>Book Name: Reverend Insanity</h4>
+                            <span>Speaker: Fang Yuan</span>
+                        </div>
+                        <div>
+                            <p>"The path of cultivation is fraught with danger. Only those who are willing to sacrifice everything can truly walk it."</p>
+                            <h4>Book Name: Reverend Insanity</h4>
+                            <span>Speaker: Fang Yuan</span>
+                        </div>
+                        <div>
+                            <p>"Friendship is a luxury in this world, a world where betrayal is common and trust is rare."</p>
+                            <h4>Book Name: Reverend Insanity</h4>
+                            <span>Speaker: Fang Yuan</span>
+                        </div>
+                        <div>
+                            <p>"In this world, only the strong have the right to speak. Weakness is a curse that shackles your destiny."</p>
+                            <h4>Book Name: Reverend Insanity</h4>
+                            <span>Speaker: Fang Yuan</span>
+                        </div>
+                        <div>
+                            <p>"The price of power is sacrifice. Without sacrifice, no one can truly become great."</p>
+                            <h4>Book Name: Reverend Insanity</h4>
+                            <span>Speaker: Fang Yuan</span>
+                        </div>
+                        <div>
+                            <p>"The world is full of schemes, and only those who can outwit their enemies can truly survive."</p>
+                            <h4>Book Name: Reverend Insanity</h4>
+                            <span>Speaker: Fang Yuan</span>
+                        </div>
+                        <div>
+                            <p>"Life is but a fleeting moment. It is not the length of life that matters, but the depth of its meaning."</p>
+                            <h4>Book Name: Reverend Insanity</h4>
+                            <span>Speaker: Fang Yuan</span>
+                        </div>
+                        <div>
+                            <p>"Trust no one, for in this world, even your closest ally can turn against you when the time is right."</p>
+                            <h4>Book Name: Reverend Insanity</h4>
+                            <span>Speaker: Fang Yuan</span>
+                        </div>                                        
+                    <div>
+                        <p>"We are all fools in love."</p>
+                        <h4>Book Name: Pride and Prejudice</h4>
+                        <span>Speaker: Jane Austen</span>
+                    </div>
+                    <div>
+                        <p>"Angry people are not always wise."</p>
+                        <h4>Book Name: Pride and Prejudice</h4>
+                        <span>Speaker: Jane Austen</span>
+                    </div>
+                    <div>
+                        <p>"Happiness in marriage is entirely a matter of chance."</p>
+                        <h4>Book Name: Pride and Prejudice</h4>
+                        <span>Speaker: Jane Austen</span>
+                    </div>
+                    <div>
+                        <p>"The more I see of the world, the more I am dissatisfied with it."</p>
+                        <h4>Book Name: Pride and Prejudice</h4>
+                        <span>Speaker: Jane Austen</span>
+                    </div>
+                    <div>
+                        <p>"Nothing is more deceitful than the appearance of humility. It is often only carelessness of opinion, and sometimes an indirect boast."</p>
+                        <h4>Book Name: Pride and Prejudice</h4>
+                        <span>Speaker: Jane Austen</span>
+                    </div>
+                    <div>
+                        <p>"There is no charm equal to tenderness of heart."</p>
+                        <h4>Book Name: Pride and Prejudice</h4>
+                        <span>Speaker: Jane Austen</span>
+                    </div>
+                    <div>
+                        <p>"War is peace. Freedom is slavery. Ignorance is strength."</p>
+                        <h4>Book Name: 1984</h4>
+                        <span>Speaker: George Orwell</span>
+                    </div>
+                    <div>
+                        <p>"Big Brother is Watching You."</p>
+                        <h4>Book Name: 1984</h4>
+                        <span>Speaker: George Orwell</span>
+                    </div>
+                    <div>
+                        <p>"Perhaps one did not want to be loved so much as to be understood."</p>
+                        <h4>Book Name: 1984</h4>
+                        <span>Speaker: George Orwell</span>
+                    </div>
+                    <div>
+                        <p>"Power is in tearing human minds to pieces and putting them together again in new shapes of your own choosing."</p>
+                        <h4>Book Name: 1984</h4>
+                        <span>Speaker: George Orwell</span>
+                    </div>
+                    <div>
+                        <p>"The best books... are those that tell you what you know already."</p>
+                        <h4>Book Name: 1984</h4>
+                        <span>Speaker: George Orwell</span>
+                    </div>
+                    <div>
+                        <p>"If you want a picture of the future, imagine a boot stamping on a human face—forever."</p>
+                        <h4>Book Name: 1984</h4>
+                        <span>Speaker: George Orwell</span>
+                    </div>
+                    <div>
+                        <p>"In the face of pain there are no heroes."</p>
+                        <h4>Book Name: 1984</h4>
+                        <span>Speaker: George Orwell</span>
+                    </div>
+                    <div>
+                        <p>"Doublethink means the power of holding two contradictory beliefs in one's mind simultaneously, and accepting both of them."</p>
+                        <h4>Book Name: 1984</h4>
+                        <span>Speaker: George Orwell</span>
+                    </div>
+                    <div>
+                        <p>"Who controls the past controls the future. Who controls the present controls the past."</p>
+                        <h4>Book Name: 1984</h4>
+                        <span>Speaker: George Orwell</span>
+                    </div>
+                    <div>
+                        <p>"We know that no one ever seizes power with the intention of relinquishing it."</p>
+                        <h4>Book Name: 1984</h4>
+                        <span>Speaker: George Orwell</span>
+                    </div>
+                    <div>
+                        <p>"It is nothing to die; it is dreadful not to live."</p>
+                        <h4>Book Name: Les Misérables</h4>
+                        <span>Speaker: Victor Hugo</span>
+                    </div>
+                    <div>
+                        <p>"To love or have loved, that is enough. Ask nothing further."</p>
+                        <h4>Book Name: Les Misérables</h4>
+                        <span>Speaker: Victor Hugo</span>
+                    </div>
+                    <div>
+                        <p>"Even the darkest night will end and the sun will rise."</p>
+                        <h4>Book Name: Les Misérables</h4>
+                        <span>Speaker: Victor Hugo</span>
+                    </div>
+                    <div>
+                        <p>"Not being heard is no reason for silence."</p>
+                        <h4>Book Name: Les Misérables</h4>
+                        <span>Speaker: Victor Hugo</span>
+                    </div>
+                    <div>
+                        <p>"There is nothing like a dream to create the future."</p>
+                        <h4>Book Name: Les Misérables</h4>
+                        <span>Speaker: Victor Hugo</span>
+                    </div>
+                    <div>
+                        <p>"Laughter is sunshine, it chases winter from the human face."</p>
+                        <h4>Book Name: Les Misérables</h4>
+                        <span>Speaker: Victor Hugo</span>
+                    </div>
+                    <div>
+                        <p>"He never went out without a book under his arm, and he often came back with two."</p>
+                        <h4>Book Name: Les Misérables</h4>
+                        <span>Speaker: Victor Hugo</span>
+                    </div>
+                    <div>
+                        <p>"To learn to read is to light a fire; every syllable that is spelled out is a spark."</p>
+                        <h4>Book Name: Les Misérables</h4>
+                        <span>Speaker: Victor Hugo</span>
+                    </div>
+                    <div>
+                        <p>"Those who do not weep, do not see."</p>
+                        <h4>Book Name: Les Misérables</h4>
+                        <span>Speaker: Victor Hugo</span>
+                    </div>
+                    <div>
+                        <p>"You who suffer because you love, love still more. To die of love, is to live by it."</p>
+                        <h4>Book Name: Les Misérables</h4>
+                        <span>Speaker: Victor Hugo</span>
+                    </div>
+                    <div>
+                        <p>"You never really understand a person until you consider things from his point of view... Until you climb inside of his skin and walk around in it."</p>
+                        <h4>Book Name: To Kill a Mockingbird</h4>
+                        <span>Speaker: Harper Lee</span>
+                    </div>
+                    <div>
+                        <p>"The one thing that doesn’t abide by majority rule is a person’s conscience."</p>
+                        <h4>Book Name: To Kill a Mockingbird</h4>
+                        <span>Speaker: Harper Lee</span>
+                    </div>
+                    <div>
+                        <p>"People generally see what they look for, and hear what they listen for."</p>
+                        <h4>Book Name: To Kill a Mockingbird</h4>
+                        <span>Speaker: Harper Lee</span>
+                    </div>
+                    <div>
+                        <p>"Until I feared I would lose it, I never loved to read. One does not love breathing."</p>
+                        <h4>Book Name: To Kill a Mockingbird</h4>
+                        <span>Speaker: Harper Lee</span>
+                    </div>
+                    <div>
+                        <p>"Mockingbirds don’t do one thing but make music for us to enjoy... That’s why it’s a sin to kill a mockingbird."</p>
+                        <h4>Book Name: To Kill a Mockingbird</h4>
+                        <span>Speaker: Harper Lee</span>
+                    </div>
+                    <div>
+                        <p>"The most important thing is to try and be a good person."</p>
+                        <h4>Book Name: To Kill a Mockingbird</h4>
+                        <span>Speaker: Harper Lee</span>
+                    </div>
+                    <div>
+                        <p>"Atticus, he was real nice." "Most people are, Scout, when you finally see them."</p>
+                        <h4>Book Name: To Kill a Mockingbird</h4>
+                        <span>Speaker: Harper Lee</span>
+                    </div>
+                    <div>
+                        <p>"Courage is not a man with a gun in his hand. It’s when you know you’re licked before you begin, but you begin anyway and see it through no matter what."</p>
+                        <h4>Book Name: To Kill a Mockingbird</h4>
+                        <span>Speaker: Harper Lee</span>
+                    </div>
+                    <div>
+                        <p>"It’s never an insult to be called what somebody thinks is a bad name. It just shows you how poor that person is, it doesn’t hurt you."</p>
+                        <h4>Book Name: To Kill a Mockingbird</h4>
+                        <span>Speaker: Harper Lee</span>
+                    </div>
+                    <div>
+                        <p>"Real courage is when you fight for what’s right, even when the odds are against you."</p>
+                        <h4>Book Name: To Kill a Mockingbird</h4>
+                        <span>Speaker: Harper Lee</span>
+                    </div>
+                                                                                
+                    <div>
+                        <p>"The unexamined life is not worth living."</p>
+                        <h4>Book Name: Apology</h4>
+                        <span>Speaker: Socrates</span>
+                    </div>
+                    
+                    <div>
+                        <p>"To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment."</p>
+                        <h4>Book Name: The Essential Rumi</h4>
+                        <span>Speaker: Ralph Waldo Emerson</span>
+                    </div>
+                    
+                    <div>
+                        <p>"It is only with the heart that one can see rightly; what is essential is invisible to the eye."</p>
+                        <h4>Book Name: The Little Prince</h4>
+                        <span>Speaker: Antoine de Saint-Exupéry</span>
+                    </div>
+                    
+                    <div>
+                        <p>"In three words I can sum up everything I've learned about life: it goes on."</p>
+                        <h4>Book Name: The Poet</h4>
+                        <span>Speaker: Robert Frost</span>
+                    </div>
+                    
+                    <div>
+                        <p>"All we have to decide is what to do with the time that is given us."</p>
+                        <h4>Book Name: The Fellowship of the Ring</h4>
+                        <span>Speaker: J.R.R. Tolkien</span>
+                    </div>
+                    
+                    <div>
+                        <p>"Not all those who wander are lost."</p>
+                        <h4>Book Name: The Fellowship of the Ring</h4>
+                        <span>Speaker: J.R.R. Tolkien</span>
+                    </div>
+                    
+                    <div>
+                        <p>"It is our choices, Harry, that show what we truly are, far more than our abilities."</p>
+                        <h4>Book Name: Harry Potter and the Chamber of Secrets</h4>
+                        <span>Speaker: J.K. Rowling</span>
+                    </div>
+                    
+                    <div>
+                        <p>"The only way to do great work is to love what you do."</p>
+                        <h4>Book Name: Steve Jobs (Stanford Commencement Speech)</h4>
+                        <span>Speaker: Steve Jobs</span>
+                    </div>
+                    
+                    <div>
+                        <p>"What lies behind us and what lies before us are tiny matters compared to what lies within us."</p>
+                        <h4>Book Name: Emerson's Essays</h4>
+                        <span>Speaker: Ralph Waldo Emerson</span>
+                    </div>
+                    
+                    <div>
+                        <p>"To be great is to be misunderstood."</p>
+                        <h4>Book Name: Self-Reliance</h4>
+                        <span>Speaker: Ralph Waldo Emerson</span>
+                    </div>
+                    
+                    <div>
+                        <p>"It is not length of life, but depth of life."</p>
+                        <h4>Book Name: The Sickness Unto Death</h4>
+                        <span>Speaker: Søren Kierkegaard</span>
+                    </div>
+                    
+                    <div>
+                        <p>"We are what we repeatedly do. Excellence, then, is not an act, but a habit."</p>
+                        <h4>Book Name: The Nicomachean Ethics</h4>
+                        <span>Speaker: Aristotle</span>
+                    </div>
+                    
+                    <div>
+                        <p>"The only limit to our realization of tomorrow will be our doubts of today."</p>
+                        <h4>Book Name: The New Frontier</h4>
+                        <span>Speaker: Franklin D. Roosevelt</span>
+                    </div>
+                    
+                    <div>
+                        <p>"Success is not final, failure is not fatal: It is the courage to continue that counts."</p>
+                        <h4>Book Name: Never Give In!</h4>
+                        <span>Speaker: Winston Churchill</span>
+                    </div>
+                    
+                    <div>
+                        <p>"Life is what happens when you're busy making other plans."</p>
+                        <h4>Book Name: John Lennon: The Life</h4>
+                        <span>Speaker: John Lennon</span>
+                    </div>
+                    
+                    <div>
+                        <p>"What we think, we become."</p>
+                        <h4>Book Name: Dhammapada</h4>
+                        <span>Speaker: Buddha</span>
+                    </div>
+                    
+                    <div>
+                        <p>"Hope is the thing with feathers that perches in the soul."</p>
+                        <h4>Book Name: Poems</h4>
+                        <span>Speaker: Emily Dickinson</span>
+                    </div>
+                    
+                    <div>
+                        <p>"To die will be an awfully big adventure."</p>
+                        <h4>Book Name: Peter Pan</h4>
+                        <span>Speaker: J.M. Barrie</span>
+                    </div>
+                    
+                    <div>
+                        <p>"You only live once, but if you do it right, once is enough."</p>
+                        <h4>Book Name: The Best of Me</h4>
+                        <span>Speaker: Maya Angelou</span>
+                    </div>
+                    
+                    <div>
+                        <p>"Do not go where the path may lead, go instead where there is no path and leave a trail."</p>
+                        <h4>Book Name: The Quotable Aids</h4>
+                        <span>Speaker: Ralph Waldo Emerson</span>
+                    </div>
+                    
+                    <div>
+                        <p>"Not everything that is faced can be changed, but nothing can be changed until it is faced."</p>
+                        <h4>Book Name: The Souls of Black Folk</h4>
+                        <span>Speaker: W.E.B. Du Bois</span>
+                    </div>
+                    
+                    <div>
+                        <p>"The future belongs to those who believe in the beauty of their dreams."</p>
+                        <h4>Book Name: This I Believe</h4>
+                        <span>Speaker: Eleanor Roosevelt</span>
+                    </div>
+                    
+                    <div>
+                        <p>"You miss 100% of the shots you don’t take."</p>
+                        <h4>Book Name: The Game</h4>
+                        <span>Speaker: Wayne Gretzky</span>
+                    </div>
+                    
+                    <div>
+                        <p>"Everything you’ve ever wanted is on the other side of fear."</p>
+                        <h4>Book Name: The Magic of Thinking Big</h4>
+                        <span>Speaker: David Schwartz</span>
+                    </div>
+                    
+                    <div>
+                        <p>"What we achieve inwardly will change outer reality."</p>
+                        <h4>Book Name: The Power of Now</h4>
+                        <span>Speaker: Eckhart Tolle</span>
+                    </div>
+                    
+                    <div>
+                        <p>"The best way to predict the future is to create it."</p>
+                        <h4>Book Name: The Adventures of Johnny Bunko</h4>
+                        <span>Speaker: Daniel H. Pink</span>
+                    </div>
+                    
+                    <div>
+                        <p>"It does not matter how slowly you go as long as you do not stop."</p>
+                        <h4>Book Name: The Analects</h4>
+                        <span>Speaker: Confucius</span>
+                    </div>
+                    
+                    <div>
+                        <p>"Those who cannot remember the past are condemned to repeat it."</p>
+                        <h4>Book Name: The Life of Reason</h4>
+                        <span>Speaker: George Santayana</span>
+                    </div>
+                    
+                    <div>
+                        <p>"We do not remember days; we remember moments."</p>
+                        <h4>Book Name: The Art of Travel</h4>
+                        <span>Speaker: Aldous Huxley</span>
+                    </div>
+                    
+                    <div>
+                        <p>"We are made wise not by the recollection of our past, but by the responsibility for our future."</p>
+                        <h4>Book Name: The Gift of Fear</h4>
+                        <span>Speaker: Gavin de Becker</span>
+                    </div>
+                    
+                    <div>
+                        <p>"Life is either a daring adventure or nothing at all."</p>
+                        <h4>Book Name: The Open Road</h4>
+                        <span>Speaker: Helen Keller</span>
+                    </div>
+                    
+                    <div>
+                        <p>"Keep your face always toward the sunshine—and shadows will fall behind you."</p>
+                        <h4>Book Name: Poems</h4>
+                        <span>Speaker: Walt Whitman</span>
+                    </div>
+                    
+                    <div>
+                        <p>"The purpose of our lives is to be happy."</p>
+                        <h4>Book Name: The Art of Happiness</h4>
+                        <span>Speaker: Dalai Lama</span>
+                    </div>
+                    
+                    <div>
+                        <p>"Dream big and dare to fail."</p>
+                        <h4>Book Name: The Power of Positive Thinking</h4>
+                        <span>Speaker: Norman Vincent Peale</span>
+                    </div>
+                    
+                    <div>
+                        <p>"The only impossible journey is the one you never begin."</p>
+                        <h4>Book Name: The Pursuit of Happyness</h4>
+                        <span>Speaker: Chris Gardner</span>
+                    </div>
+                    <div>
+                        <p>"You must be the change you wish to see in the world."</p>
+                        <h4>Book Name: The Story of My Experiments with Truth</h4>
+                        <span>Speaker: Mahatma Gandhi</span>
+                    </div>
+                  </div>
+                </section>
+                <section class="sectionai">
+                    <i class="fa-solid fa-backward" id="button3"></i>
+                    <div class="contain">
+                        <div class="card">
+                          <img src="pictures/serves/aitools/Perplexity-AI.jpg" alt="Perplexity-AI">
+                          <h2>Perplexity-AI</h2>
+                          <p>The best alternative to chat GPT, as it provides you direct answers with sources cited, and if you have a PDF, it will answer any question from it.</p>
+                          <a target="_blank" href="https://www.perplexity.ai/">use now</a>
+                        </div>
+                        <div class="card">
+                          <img src="pictures/serves/aitools/clipdrop.jpg" alt="clipdrop">
+                          <h2>clipdrop</h2>
+                          <p>To edit images using artificial intelligence, it allows removing backgrounds and improving the quality of images.</p>
+                          <a target="_blank" href="https://aidepot.co/clipdrop">use now</a>
+                        </div>
+                        <div class="card">
+                          <img src="pictures/serves/aitools/Featured-Image-800-x-420-px.png" alt="invideo">
+                          <h2>invideo</h2>
+                          <p>To create videos easily using ready-made templates and advanced editing tools.</p>
+                          <a target="_blank" href="https://invideo.io/">use now</a>
+                        </div>
+                        <div class="card">
+                          <img src="pictures/serves/aitools/Ocoya-Marketing-Affiliate-Program.png" alt="ocoya">
+                          <h2>ocoya</h2>
+                          <p>To create marketing content using artificial intelligence and design publications and advertisements</p>
+                          <a target="_blank" href="https://www.ocoya.com/">use now</a>
+                        </div>
+                        <div class="card">
+                          <img src="pictures/serves/aitools/Radaar-Lifetime-Deal-on-Appsumo (1).jpg" alt="radaar">
+                          <h2>radaar</h2>
+                          <p>To manage social media and provide tools for analyzing data and scheduling posts</p>
+                          <a target="_blank" href="https://www.radaar.io/">use now</a>
+                        </div>
+                        <div class="card">
+                          <img src="pictures/serves/aitools/ORA-Task-Management-app.jpeg" alt="ora">
+                          <h2>ora</h2>
+                          <p>To manage projects and combine task management, chat, and notes in one place</p>
+                          <a target="_blank" href="https://ora.pm/">use now</a>
+                        </div>
+                        <div class="card">
+                          <img src="pictures/serves/aitools/1280X1280.png" alt="">
+                          <h2>beago</h2>
+                          <p>Meet beago to get results that go beyond google, chat, and GPT</p>
+                          <a target="_blank" href="https://beago.ai/">use now</a>
+                        </div>
+                        <div class="card">
+                          <img src="pictures/serves/aitools/humanizeaitext.webp" alt="Humanize AI text">
+                          <h2>Humanize AI text</h2>
+                          <p>Get rid of GPT chat writing errors and add a human touch to it. With the Humanize AI text tool, you will be able to change your content intelligently.</p>
+                          <a target="_blank" href="https://www.humanizeaitext.org/">use now</a>
+                        </div>
+                        <div class="card">
+                          <img src="pictures/serves/aitools/humata-logo-og.webp" alt="Humata">
+                          <h2>Humata AI</h2>
+                          <p>Summarizing long texts quickly and efficiently helps save time and makes it easier to understand information.</p>
+                          <a target="_blank" href="https://www.humata.ai/">use now</a>
+                        </div>
+                        <div class="card">
+                          <img src="pictures/serves/aitools/maxresdefault.jpg" alt="GigaBrain">
+                          <h2>GigaBrain</h2>
+                          <p>An awesome tool that is an artificial intelligence with human answers that relies on complex algorithms to analyze huge amounts of data and summarize it to provide you with clear and concise answers.</p>
+                          <a target="_blank" href="https://thegigabrain.com/">use now</a>
+                        </div>
+                        <div class="card">
+                          <img src="pictures/serves/aitools/zety-reviews-featured-image.webp" alt="zety">
+                          <h2>zety</h2>
+                          <p>Create a job-winning resume in minutes with our easy-to-use builder.</p>
+                          <a target="_blank" href="https://zety.com/">use now</a>
+                        </div>
+                        <div class="card">
+                          <img src="pictures/serves/aitools/AKOOL-1-1.jpg" alt="akool">
+                          <h2>akool</h2>
+                          <p>Put any video you have and choose any language you want and it will be translated into the language you chose</p>
+                          <a target="_blank" href="https://akool.com/">use now</a>
+                        </div>
+                        <div class="card">
+                            <img src="pictures/serves/aitools/tool1.jpg" alt="tool1">
+                            <h2>DeepL Translator</h2>
+                            <p>AI-powered translation tool offering high-quality translations for multiple languages.</p>
+                            <a target="_blank" href="https://www.deepl.com/">use now</a>
+                          </div>
+                          
+                          <div class="card">
+                            <img src="pictures/serves/aitools/tool2.jpg" alt="tool2">
+                            <h2>ChatGPT</h2>
+                            <p>AI chatbot from OpenAI capable of understanding and generating human-like text responses.</p>
+                            <a target="_blank" href="https://chat.openai.com/">use now</a>
+                          </div>
+                          
+                          <div class="card">
+                            <img src="pictures/serves/aitools/tool3.jpg" alt="tool3">
+                            <h2>Copy.ai</h2>
+                            <p>AI-powered tool for creating marketing copy, blog posts, and social media content.</p>
+                            <a target="_blank" href="https://www.copy.ai/">use now</a>
+                          </div>
+                          
+                          <div class="card">
+                            <img src="pictures/serves/aitools/tool4.jpeg" alt="tool4">
+                            <h2>Runway</h2>
+                            <p>AI platform for creative professionals that offers tools for video editing, image creation, and more.</p>
+                            <a target="_blank" href="https://runwayml.com/">use now</a>
+                          </div>
+                          
+                          <div class="card">
+                            <img src="pictures/serves/aitools/tool5.jpg" alt="tool5">
+                            <h2>Fotor</h2>
+                            <p>AI-powered photo editing tool with automatic enhancements and special effects for images.</p>
+                            <a target="_blank" href="https://www.fotor.com/">use now</a>
+                          </div>
+                          
+                          <div class="card">
+                            <img src="pictures/serves/aitools/tool6.jpg" alt="tool6">
+                            <h2>Grammarly</h2>
+                            <p>AI writing assistant that helps improve grammar, spelling, and style in writing.</p>
+                            <a target="_blank" href="https://www.grammarly.com/">use now</a>
+                          </div>
+                          
+                          <div class="card">
+                            <img src="pictures/serves/aitools/tool7.jpeg" alt="tool7">
+                            <h2>Jasper AI</h2>
+                            <p>AI writing assistant for creating blog posts, marketing copy, and other content types.</p>
+                            <a target="_blank" href="https://www.jasper.ai/">use now</a>
+                          </div>
+                          
+                          <div class="card">
+                            <img src="pictures/serves/aitools/tool8.jpg" alt="tool8">
+                            <h2>Artbreeder</h2>
+                            <p>AI platform for creating stunning art and images by blending different art styles.</p>
+                            <a target="_blank" href="https://www.artbreeder.com/">use now</a>
+                          </div>
+                          
+                          <div class="card">
+                            <img src="pictures/serves/aitools/tool9.jpg" alt="tool9">
+                            <h2>Runway Gen-2</h2>
+                            <p>AI model that allows users to generate videos and manipulate real-time content with text inputs.</p>
+                            <a target="_blank" href="https://runwayml.com/gen-2/">use now</a>
+                          </div>
+                          
+                          <div class="card">
+                            <img src="pictures/serves/aitools/tool10.jpeg" alt="tool10">
+                            <h2>Snazzy AI</h2>
+                            <p>AI-powered copywriting tool for generating high-quality marketing content.</p>
+                            <a target="_blank" href="https://snazzy.ai/">use now</a>
+                          </div>
+                          
+                          <div class="card">
+                            <img src="pictures/serves/aitools/tool11.jpg" alt="tool11">
+                            <h2>Descript</h2>
+                            <p>AI video and audio editing tool that offers transcription and multi-track editing features.</p>
+                            <a target="_blank" href="https://www.descript.com/">use now</a>
+                          </div>
+                          
+                          <div class="card">
+                            <img src="pictures/serves/aitools/tool12.jpeg" alt="tool12">
+                            <h2>Speechmatics</h2>
+                            <p>AI speech-to-text technology for transcribing and analyzing audio and video content.</p>
+                            <a target="_blank" href="https://www.speechmatics.com/">use now</a>
+                          </div>
+                          
+                          <div class="card">
+                            <img src="pictures/serves/aitools/tool13.jpg" alt="tool13">
+                            <h2>AI Dungeon</h2>
+                            <p>Interactive storytelling game powered by AI, allowing you to create personalized adventures.</p>
+                            <a target="_blank" href="https://play.aidungeon.io/">use now</a>
+                          </div>
+                          
+                          <div class="card">
+                            <img src="pictures/serves/aitools/tool14.jpg" alt="tool14">
+                            <h2>Lumen5</h2>
+                            <p>AI video creation tool that converts blog posts and articles into engaging video content.</p>
+                            <a target="_blank" href="https://www.lumen5.com/">use now</a>
+                          </div>
+                          
+                          <div class="card">
+                            <img src="pictures/serves/aitools/tool15.jpeg" alt="tool15">
+                            <h2>Surfer AI</h2>
+                            <p>AI-powered content optimization and SEO tool for improving search engine rankings.</p>
+                            <a target="_blank" href="https://surferseo.com/">use now</a>
+                          </div>
+                          
+                          <div class="card">
+                            <img src="pictures/serves/aitools/tool16.jpg" alt="tool16">
+                            <h2>Frase AI</h2>
+                            <p>AI tool for content research and writing, focused on SEO optimization for articles and blogs.</p>
+                            <a target="_blank" href="https://www.frase.io/">use now</a>
+                          </div>
+                          
+                          <div class="card">
+                            <img src="pictures/serves/aitools/tool17.jpg" alt="tool17">
+                            <h2>CopySmith</h2>
+                            <p>AI-powered content generation tool for creating product descriptions, blog posts, and ad copy.</p>
+                            <a target="_blank" href="https://copysmith.ai/">use now</a>
+                          </div>
+                          
+                          <div class="card">
+                            <img src="pictures/serves/aitools/tool18.jpg" alt="tool18">
+                            <h2>Tabnine</h2>
+                            <p>AI-powered code completion tool for developers, helping to improve coding speed and accuracy.</p>
+                            <a target="_blank" href="https://www.tabnine.com/">use now</a>
+                          </div>
+                          
+                          <div class="card">
+                            <img src="pictures/serves/aitools/tool19.jpg" alt="tool19">
+                            <h2>Brain.fm</h2>
+                            <p>AI-generated music designed to improve focus, sleep, and relaxation.</p>
+                            <a target="_blank" href="https://www.brain.fm/">use now</a>
+                          </div>
+                          
+                          <div class="card">
+                            <img src="pictures/serves/aitools/tool20.jpg" alt="tool20">
+                            <h2>Replika</h2>
+                            <p>AI chatbot that helps with emotional support and personal growth through conversational engagement.</p>
+                            <a target="_blank" href="https://replika.ai/">use now</a>
+                          </div>
+                          
+                          <div class="card">
+                            <img src="pictures/serves/aitools/tool21.jpg" alt="tool21">
+                            <h2>Deep Dream Generator</h2>
+                            <p>AI-powered tool for generating unique and surreal art by transforming photos with deep learning models.</p>
+                            <a target="_blank" href="https://deepdreamgenerator.com/">use now</a>
+                          </div>
+                          
+                          <div class="card">
+                            <img src="pictures/serves/aitools/tool22.jpeg" alt="tool22">
+                            <h2>Framer X</h2>
+                            <p>AI-powered web design tool that allows for the creation of responsive websites and interactive prototypes.</p>
+                            <a target="_blank" href="https://www.framer.com/">use now</a>
+                          </div>
+                          
+                          <div class="card">
+                            <img src="pictures/serves/aitools/tool23.jpg" alt="tool23">
+                            <h2>Articoolo</h2>
+                            <p>AI content generation tool that creates high-quality articles and blog posts automatically.</p>
+                            <a target="_blank" href="https://articoolo.com/">use now</a>
+                          </div>
+                          
+                          <div class="card">
+                            <img src="pictures/serves/aitools/tool24.jpg" alt="tool24">
+                            <h2>Veed.io</h2>
+                            <p>AI-powered online video editor with advanced features for creating and editing videos quickly.</p>
+                            <a target="_blank" href="https://www.veed.io/">use now</a>
+                          </div>
+                          
+                          <div class="card">
+                            <img src="pictures/serves/aitools/tool25.jpg" alt="tool25">
+                            <h2>Artisto</h2>
+                            <p>AI app that transforms photos and videos into artwork inspired by famous artists' styles.</p>
+                            <a target="_blank" href="https://artisto.net/">use now</a>
+                          </div>
+                          
+                          <div class="card">
+                            <img src="pictures/serves/aitools/tool26.jpg" alt="tool26">
+                            <h2>Speechly</h2>
+                            <p>Speech recognition API for real-time voice-driven applications and accurate transcription.</p>
+                            <a target="_blank" href="https://www.speechly.com/">use now</a>
+                          </div>
+                          
+                          <div class="card">
+                            <img src="pictures/serves/aitools/tool27.jpg" alt="tool27">
+                            <h2>Quillbot</h2>
+                            <p>AI-powered tool that helps with paraphrasing and enhancing your writing by suggesting synonyms.</p>
+                            <a target="_blank" href="https://www.quillbot.com/">use now</a>
+                          </div>
+                          
+                          <div class="card">
+                            <img src="pictures/serves/aitools/tool28.jpg" alt="tool28">
+                            <h2>LetsEnhance</h2>
+                            <p>AI-based image enhancement tool that increases the resolution of images without losing quality.</p>
+                            <a target="_blank" href="https://letsenhance.io/">use now</a>
+                          </div>
+                          <div class="card">
+                            <img style="filter: brightness(1);" src="pictures/serves/aitools/tool29.jpg" alt="tool29">
+                            <h2>AI Picasso</h2>
+                            <p>AI-powered art generator that transforms your photos into beautiful artworks resembling Picasso's style.</p>
+                            <a target="_blank" href="https://www.ai-picasso.com/">use now</a>
+                          </div>
+                          
+                          <div class="card">
+                            <img src="pictures/serves/aitools/tool30.jpg" alt="tool30">
+                            <h2>Grammarly Keyboard</h2>
+                            <p>AI-powered keyboard app that provides grammar, spelling, and punctuation corrections as you type.</p>
+                            <a target="_blank" href="https://www.grammarly.com/mobile/">use now</a>
+                          </div>
+                          <div class="card">
+                            <img src="pictures/serves/aitools/tool32.jpg" alt="tool32">
+                            <h2>Canva AI</h2>
+                            <p>AI tool integrated into Canva that helps design stunning graphics and social media posts automatically.</p>
+                            <a target="_blank" href="https://www.canva.com/features/ai-tools/">use now</a>
+                          </div>
+                          <div class="card">
+                            <img src="pictures/serves/aitools/tool37.jpg" alt="tool37">
+                            <h2>DeepAI</h2>
+                            <p>AI platform offering a range of services, including text generation, image processing, and more.</p>
+                            <a target="_blank" href="https://deepai.org/">use now</a>
+                          </div>
+                    </div>
+                </section>
+        </main>
+        <script src="js/serves.js"></script>
+    </body>
+</html>

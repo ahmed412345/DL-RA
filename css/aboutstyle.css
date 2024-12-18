@@ -1,0 +1,325 @@
+@font-face {
+    font-family: h1-font;
+    src: url(../fonts/Kanit-Bold.ttf)
+}
+@font-face {
+    font-family: main;
+    src: url(../fonts/PlaywriteGBS-VariableFont_wght.ttf)
+}
+@font-face {
+    font-family: font;
+    src: url(../fonts/RobotoSlab-VariableFont_wght.ttf)
+}
+body{
+    padding: 0 !important;
+}
+header{
+    margin: 40px !important;
+}
+@media screen and (max-width:600px){
+    header{
+        margin: 20px !important;   
+    }
+}
+.sectionabout2{
+    width: 100%;
+    height: 70vh;
+    background: url(../pictures/about/firstse.jpg) center/cover rgba(0, 0, 0, 0.281);
+    background-blend-mode: multiply;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    color: white;
+    padding: 10px;
+}
+.sectionabout2 h1{
+    font-size: 100px;
+    white-space: nowrap;
+}
+@media screen and (max-width:600px){
+    .sectionabout2 h1{
+        font-size: 60px;
+    }
+}
+.sectionabout2 p{
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+}
+.sectionabout3, .sectionabout4{
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 100px;
+}
+.sectionabout3 img{
+    width:100%;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+.left-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.left-div h2{
+    font-size: 40px;
+    font-family: main ,monospace;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.left-div p{
+    line-height: 1.6;
+    font-size: 20px;
+    text-align: justify;
+    font-weight: bold;
+}
+.leftB{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.sectionabout4 .leftB p:nth-of-type(1){
+    font-size: 20px;
+    text-align: justify;
+}
+.sectionabout4 .leftB p:not(p:nth-of-type(1)){
+    border-bottom: 2px solid;
+    position: relative;
+    padding: 5px;
+}
+.sectionabout4 .leftB p:nth-of-type(2){
+    border-image: linear-gradient(to right, red 80%, blue 85%) 1;
+}
+.sectionabout4 .leftB p:nth-of-type(3){
+    border-image: linear-gradient(to right, red 70%, blue 75%) 1;
+}
+.sectionabout4 .leftB p:nth-of-type(4){
+    border-image: linear-gradient(to right, red 95%, blue 98%) 1;
+}
+.sectionabout4 .leftB p span:nth-of-type(2){
+    position: absolute;
+}
+.sectionabout4 .leftB p:nth-of-type(2) span:nth-of-type(2){
+    left: 80%;
+}
+.sectionabout4 .leftB p:nth-of-type(3) span:nth-of-type(2){
+    left: 70%;
+}
+.sectionabout4 .leftB p:nth-of-type(4) span:nth-of-type(2){
+    left: 95%;
+}
+.sectionabout4 .leftB h2{
+    text-transform: capitalize;
+    font-size: 40px;
+    font-family: main ,monospace;
+    text-align: center;
+}
+.sectionabout4 .rightB{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 50px;
+    column-gap: 2%;
+}
+.sectionabout4 .rightB div{
+    width: 49%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.sectionabout4 .rightB div h3{
+    font-size: 60px;
+    font-family: font, monospace;
+}
+.sectionabout4 .rightB div span{
+    font-size: 14px;
+}
+.sectionabout5{
+    width: 100%;
+    height: 100vh;
+    background: url(../pictures/about/man-8554677.png) center/cover rgba(0, 0, 0, 0.212);
+    background-blend-mode: multiply;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sectionabout5 div{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.sectionabout5 div p{
+    font-size: 20px;
+    font-family: font, monospace;
+    color: white;
+}
+.sectionabout5 div h3{
+    font-size: 70px;
+    font-family: main, monospace;
+    text-align: center;
+    color: white;
+}
+.sectionabout5 div a{
+    margin-top: 20px;
+    font-size: 30px;
+    background-color: black;
+    text-decoration: none;
+    transition: .3s;
+    color: white;
+    padding: 20px;
+    border-radius: 50px;
+    box-shadow: 1px 1px 10px 5px white;
+}
+.sectionabout5 div a:hover{
+    box-shadow: 1px 1px 10px 5px rgb(0, 0, 0);
+    background-color: white;
+    color: black;
+}
+@media screen and (max-width:767px){
+    .sectionabout5 div{
+        width: 90%;
+    }
+    .sectionabout5 div p{
+        font-size: 16px;
+    }
+    .sectionabout5 div h3{
+        font-size: 40px;
+    }
+    .sectionabout5 div a{
+        padding: 10px;
+        font-size: 20px;
+    }
+}
+#footerabout{
+    margin-top: 100px;
+    background-color: #202020;
+    padding: 50px;
+    white-space: nowrap;
+    color: white;
+}
+.upFo{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+#footerabout .oneF{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#footerabout .oneF p{
+    white-space: wrap;
+    text-align: justify;
+}
+#footerabout .logoFo{
+    width: 100px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+#footerabout .logoFo img{
+    width: 100%;
+}
+#footerabout .logoFo h2{
+    font-size: 30px;
+    font-family: font, monospace;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+#footerabout .icons{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+#footerabout .icons a{
+    color: white;
+    text-decoration: none;
+}
+#footerabout .font{
+    font-size: 25px;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 2);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .2s;
+}
+#footerabout .fa-facebook-f:hover{
+    background-color: rgb(52, 52, 207);
+}
+#footerabout .fa-twitter:hover{
+    background-color: rgb(22, 132, 165);
+}
+#footerabout .fa-instagram:hover{
+    background-color: rgb(194, 61, 61);
+}
+.twoF ul h3, .threeF ul h3{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.twoF ul li, .threeF ul li{
+    list-style: none;
+    margin-left: 10px;
+    padding: 5px;
+    display: flex;
+    gap: 10px;
+}
+.threeF ul li .tel{
+    font-size: 25px;
+}
+.twoF ul li a, .threeF ul a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: .3s;
+}
+.twoF ul li a:hover, .threeF ul a:hover{
+    color: gray;
+}
+#footerabout h6{
+    text-align: center;
+}
+@media screen and (max-width:700px){
+    #footerabout{
+        padding: 20px;
+    }
+    .upFo{
+        gap: 30px;
+    }
+    #footerabout .logoFo{
+        width: 70px;
+    }
+    #footerabout .logoFo h2{
+        font-size: 25px;
+    }
+    #footerabout .font{
+        font-size: 20px;
+    }
+    .twoF ul h3, .threeF ul h3{
+        font-size: 25px;
+    }
+    .twoF ul li a{
+        font-size: 16px;
+    }
+
+}
+@media screen and (max-width:550px){
+    .upFo{
+        flex-wrap: wrap;
+        align-items: center;
+    }
+}
