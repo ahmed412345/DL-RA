@@ -207,4 +207,3 @@ console.log('%cplease do not try to edit my web site','font-size:50px; color:red
 if(window.top !== window.self){
     window.top.location.replace(window.self.location);
 }
-
