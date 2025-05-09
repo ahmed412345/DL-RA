@@ -12,7 +12,6 @@ let btn1 = document.getElementById("btn1");
 let btn = document.getElementById("tns");
 let shadow = document.getElementsByClassName("shadow");
 let callRe = document.getElementsByClassName("fa-headset")[0];
-s;
 setInterval(function () {
     let currentBackground = window.getComputedStyle(sec1).backgroundImage;
     if (currentBackground.includes("2.jpg")) {
