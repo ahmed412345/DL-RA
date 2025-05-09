@@ -69,9 +69,9 @@ sun.onclick = function() {
     }
 }
 let savedTheme = localStorage.getItem('theme');
-if(savedTheme){
-    eval('(' + savedTheme + ')()');
-}else{
+if (savedTheme) {
+    blackTheme();
+} else {
     whiteTheme();
 }
 function navBC() {

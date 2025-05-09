@@ -41,7 +41,7 @@ sun.onclick = function () {
 };
 let savedTheme = localStorage.getItem("theme");
 if (savedTheme) {
-    eval("(" + savedTheme + ")()");
+    blackTheme();
 } else {
     whiteTheme();
 }
